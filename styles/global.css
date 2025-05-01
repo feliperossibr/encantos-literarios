@@ -48,6 +48,20 @@ html {
   background-color: var(--shape-bg);
 }
 
+h1 {
+  font: var(--title-lg);
+  color: var(--text-title);
+}
+
+h2 {
+
+}
+
+h3 {
+  font: var(--text-body);
+  color: var(--text-body);
+}
+
 .button {
   padding-top: .75rem;
   padding-bottom: .75rem;

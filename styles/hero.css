@@ -1,0 +1,6 @@
+section.hero {
+  background: url(../assets/images/hero-background.png) center no-repeat;
+  max-width: 100%;
+  width: 100%;
+  height: 948px;
+}
