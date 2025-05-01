@@ -43,3 +43,19 @@
   --text-link: 500 .875rem var(--ff-base);
   --text-tag: 700 .625rem var(--ff-base);
 }
+
+html {
+  background-color: var(--shape-bg);
+}
+
+.button {
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
