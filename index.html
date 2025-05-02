@@ -6,21 +6,81 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Encantos Literários</title>
-  
+  <link rel="shortcut icon" href="assets/logo-symbol.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles/index.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <img src="assets/logo-horizontal.svg" alt="">
-    <button class="button">
-      <a href="#">Assinar</a>
-    </button>
-  </header>
-
   <section class="hero">
-    <h1>Desperte a sua imaginação e esplore novos mundos</h1>
-    <h3>Junte-se ao cluber de assinatura Encantos Literários e descubra maravilhas e aventuras a cada página</h3>
+    <div class="hero-image">
+      <div class="container">
+        <header class="header">
+          <nav class="navigation">
+            <picture>
+              <source srcset="./assets/logo-horizontal.svg" media="(min-width: 1280px)">
+              <img src="./assets/logo-symbol.svg" alt="">
+            </picture>
+
+            <a class="btn primary-btn" href="#subscription">
+              <span>Assinar</span>
+            </a>
+          </nav>
+        </header>
+
+        <div class="content px-md">
+          <h1>Desperte a sua imaginação e explore novos mundos</h1>
+          <p>
+            Junte-se ao clube de assinatura Encantos Literários e descubra maravilhas e aventuras a cada página
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-animation">
+      <img src="./assets/icons/opened-spellbook.svg" alt="">
+      <p class="subtitle">
+        <span class="first-span">Receba todo mês um <strong>livro surpresa</strong></span>
+        <span class="second-span">do seu tema favorito, acompanhado de <strong>brindes exclusivos</strong></span>
+        <span class="third-span">que tornarão a sua experiência literária <strong>encantadora</strong></span>
+      </p>
+      <img src="./assets/icons/crystal-ball.svg" alt="">
+    </div>
+  </section>
+
+  <section class="kit">
+    <div class="container">
+      <header class="px-lg">
+        <div>
+          <div>
+            <img class="star" src="assets/icons/star.svg" alt="">
+          </div>
+
+          <h2>Conheça o kit mensal</h2>
+
+          <div>
+            <img src="assets/icons/star.svg" alt="">
+          </div>
+        </div>
+        <p>Recebe uma caixa surpresa todos os meses</p>
+      </header>
+
+      <div class="kit-animation">
+        <div class="kit-animation-images">
+          <small>Livro em capa dura</small>
+          <img class="arrow" src="assets/icons/first-arrow.svg" alt="">
+
+          <img class="book" src="assets/images/book.png" alt="">
+
+          <small>broche Exclusivo</small>
+          <img class="arrow" src="assets/icons/second-arrow.svg" alt="">
+          <img class="pin" src="assets/images/pin.png" alt="">
+          <img class="bookmark" src="assets/images/bookmark-yellow.png" alt="">
+          <img class="bookmark" src="assets/images/bookmark-purple.png" alt="">
+          <img class="arrow" src="assets/icons/third-arrow.svg" alt="">
+          <small>Marca páginas temático</small>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
 </html>

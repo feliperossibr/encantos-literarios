@@ -1,28 +1,19 @@
-header {
-  max-width: 80rem;
-  width: 100%;
-  padding: 4rem 10rem;
-  margin-inline: auto;
+.header {
+  padding: 1.25rem 1.25rem 0;
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  & img {
-    color: var(--text-body);
-  }
-
-  & button {
-    width: 5.6rem;
-    height: 2.5rem;
-    font: var(--text-button);
-    color: var(--text-title);
-    background-color: var(--pink-dark);
-
+  .navigation {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
 
-    border: none;
+    .btn {
+      padding-inline: 1.25rem;
+    }
+  }
+}
+
+@media  and (width >= 1280px) {
+  .header {
+    padding-top: 3.5rem;
   }
 }

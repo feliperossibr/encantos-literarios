@@ -5,71 +5,89 @@
 }
 
 :root {
+  /*  COLORS  */
   --pink-light: #c59dd2;
   --pink-base: #9547a5;
   --pink-dark: #7d298a;
   --pink-low: #3f0f41;
-
   --blue-light: #73b6d2;
   --blue-base: #358bb9;
   --blue-mid: #2374a4;
   --blue-dark: #144a72;
   --blue-low: #08233c;
-
   --shape-stroke: #002347;
   --shape-hover: #001933;
   --shape-base: #000f1f;
   --shape-bg: #00050a;
-
   --text-title: #f8fbfb;
   --text-body: #e2e7e9;
   --text-label: #bac6c9;
 
+  /*  FONT FAMILY  */
   --ff-base: "Raleway", sans-serif;
 
-  --title-lg: 700 3rem var(--ff-base);
-  --title-md: 700 2.5rem var(--ff-base);
-  --title-sm: 700 2rem var(--ff-base);
-  --title-xs: 700 1rem var(--ff-base);
-
-  --text-sub: 500 2rem/2rem var(--ff-base);
-
-  --body-lg: 400 1.25rem/1.4rem var(--ff-base);
-  --body-md: 400 1rem/1.4rem var(--ff-base);
-  --body-sm: 400 .875rem/1.4rem var(--ff-base);
-  --body-xs: 400 .75rem/1.4rem var(--ff-base);
-
-  --text-button: 700 .875rem var(--ff-base);
-  --text-link: 500 .875rem var(--ff-base);
-  --text-tag: 700 .625rem var(--ff-base);
+  /*  FONT SIZE  */
+  --title-lg: 1.75rem;
+  --title-md: 2.5rem;
+  --title-sm: 1.5rem;
+  --title-xs: 1rem;
+  --subtitle: 1rem;
+  --body-lg: .875rem;
+  --body-md: .875rem;
+  --body-sm: .875rem;
+  --body-xs: .75rem;
+  --button: .875rem;
+  --link: .875rem;
+  --tag: .625rem;
 }
 
-html {
-  background-color: var(--shape-bg);
-}
-
-h1 {
-  font: var(--title-lg);
-  color: var(--text-title);
-}
-
-h2 {
-
-}
-
-h3 {
-  font: var(--text-body);
+html, body {
   color: var(--text-body);
-}
+  font-family: var(--ff-base);
+  background-color: var(--shape-bg);
 
-.button {
-  padding-top: .75rem;
-  padding-bottom: .75rem;
-  border-radius: .5rem;
-  cursor: pointer;
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: inherit;
 }
+
+h1 {
+  color: var(--text-title);
+  font-size: var(--title-lg);
+  font-weight: 700;
+}
+
+h2 {
+  text-align: center;
+  font-size: var(--title-sm);
+  font-weight: 700;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: top;
+  object-fit: cover;
+}
+
+@media screen and (width >= 1280px) {
+  :root{
+    --title-lg: 3rem;
+    --title-sm: 2rem;
+    --subtitle: 2rem;
+    --body-lg: 1.25rem;
+    --body-md: 1rem;
+  }
+}
+
