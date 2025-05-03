@@ -12,7 +12,7 @@
   gap: 1rem;
 
   padding-bottom: .75rem;
-  overflow: hidden;
+  overflow: auto;
   &::-webkit-scrollbar {
     background: var(--shape-base);
     height: .375rem;
@@ -124,7 +124,7 @@
 @-moz-document url-prefix() {
   .cards {
     scrollbar-width: thin;
-    scrollbar-color: var(--shape-stroke);
+    scrollbar-color: var(--shape-stroke) var(--shape-base);
   }
 }
 
@@ -148,7 +148,7 @@
   }
 
   & .cards {
-    overflow: hidden;
+    overflow: initial;
     padding-top: 5rem;
     position: relative;
 
@@ -271,7 +271,7 @@
       width: 55rem;
       height: 55rem;
       left: calc(50% - 55rem/2);
-      top: calc(50% - 55rem/2);
+      top: calc(50% - 55rem/2 - 2.75rem);
 
       background: var(--shape-base);
       filter: blur(17rem);
